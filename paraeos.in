@@ -1,0 +1,29 @@
+2.28E10   ! barye
+4.0
+1.0
+1
+1.25E12   !K0=1.745E12  barye
+5.00      !K0d=4.274  
+3.42      !rho0=3.644
+1
+1.602E12  !K0=1.625E12  barye
+5.82      !K0d=5.5
+8.3       !rho0=7.86
+1
+
+
+DOUBLE PRECISION          ::k0_water
+DOUBLE PRECISION          ::k0d_water
+DOUBLE PRECISION          ::rho0_water
+INTEGER                   ::iEOS_water
+DOUBLE PRECISION          ::k0_mantle
+DOUBLE PRECISION          ::k0d_mantle
+DOUBLE PRECISION          ::rho0_mantle
+INTEGER                   ::iEOS_mantle
+DOUBLE PRECISION          ::k0_core
+DOUBLE PRECISION          ::k0d_core
+DOUBLE PRECISION          ::rho0_core
+INTEGER                   ::iEOS_core
+
+ATTENTION: CGS unit
+

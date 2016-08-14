@@ -1,0 +1,71 @@
+!  base cgs
+double precision,parameter ::      gramme      = 1.
+double precision,parameter ::      centimetre  = 1.
+double precision,parameter ::      seconde     = 1.
+double precision,parameter ::      degre       = 1.
+
+
+!     -------------
+double precision,parameter ::       unitM = gramme
+double precision,parameter ::       unitL = centimetre
+double precision,parameter ::       unitT = seconde
+!     -------------
+
+!  cgs dans la nouvelle base
+!double precision,parameter ::       gramme      = 1./unitM
+!double precision,parameter ::       centimetre  = 1./unitL
+!double precision,parameter ::       seconde     = 1./unitT
+!double precision,parameter ::       degre       = 1.
+      
+
+double precision,parameter ::       dyne        = gramme*centimetre/seconde**2
+double precision,parameter ::       erg         = gramme*centimetre**2/seconde**2
+
+!  unites pratiques
+double precision,parameter ::       cm2     = 1.            * centimetre**2
+double precision,parameter ::       cm3     = 1.            * centimetre**3
+double precision,parameter ::       ms      = 1.       *1e+02 * centimetre/seconde
+double precision,parameter ::       kms     = 1.       *1e+05 * centimetre/seconde
+double precision,parameter ::       an      = 3.15576  *1e+07 * seconde
+double precision,parameter ::       Mans    = 3.15576  *1e+13 * seconde
+double precision,parameter ::       Gans    = 3.15576  *1e+16 * seconde
+double precision,parameter ::       Msol    = 1.9891   *1e+33 * gramme
+double precision,parameter ::       Mj      = 1/1047.5654  * Msol
+double precision,parameter ::       Mearth  = 5.97424  *1e+27 * gramme
+double precision,parameter ::       parsec  = 3.085678 *1e+18 * centimetre
+double precision,parameter ::       kpc     = 3.085678 *1e+21 * centimetre
+double precision,parameter ::       Mpc     = 3.085678 *1e+24 * centimetre
+double precision,parameter ::       AU      = 150.     *1e+11 * centimetre
+double precision,parameter ::       km      = 1.0      *1e+5  * centimetre
+double precision,parameter ::       Kelvin  = 1. * degre
+double precision,parameter ::       Bar     = 1.       *1e+6  * gramme / centimetre / seconde**2.
+
+!  constantes physiques
+double precision,parameter ::       c       = 2.997925 *1e+10 * centimetre/seconde
+double precision,parameter ::       eV      = 1.6022   *1e-12 * erg
+double precision,parameter ::       G       = 6.67     *1e-08 * dyne*centimetre**2/gramme**2
+double precision,parameter ::       hp      = 6.62620  *1e-27 * erg*seconde
+double precision,parameter ::       kb      = 1.38062  *1e-16 * erg/degre
+double precision,parameter ::       uma     = 1.660531 *1e-24 * gramme 
+double precision,parameter ::       a       = 7.57     *1e-15 * erg/cm3/Kelvin**4.
+double precision,parameter ::       Navo    = 6.022    *1e+23
+double precision,parameter ::       Rgp     = 8.315    *1e+07 * erg/Kelvin/gramme
+double precision,parameter ::       Rj      = 7.14     *1e+04  * km
+double precision,parameter ::       Rearth      = 6.371 * 1e+08 * centimetre
+double precision,parameter ::       Rsun    = 6.96     *1e+05  * km
+double precision,parameter ::       Lsun    = 3.827    *1e+33  * erg / seconde
+double precision,parameter ::       LJ      = 8.67     *1e-10  * Lsun
+double precision,parameter ::       a0      = 0.529    *1e-8   * centimetre
+      
+
+!  constantes physiques exprimees en unites derivees
+double precision,parameter ::       H0      = 50. * kms/Mpc
+
+! autres constantes
+double precision,parameter ::       pi      = 3.141592654
+double precision,parameter ::       pi4     = 12.56637061
+double precision,parameter ::       sigmaPlanck   = a*c/4.   ! 5.67 e -5
+double precision,parameter ::       TeffJ     = (LJ   / (4.*pi*sigmaPlanck*Rj  **2.))**(1./4.) * Kelvin
+double precision,parameter ::       Teffsun   = (Lsun / (4.*pi*sigmaPlanck*Rsun**2.))**(1./4.) * Kelvin
+double precision,parameter ::       cfrad     = -3./(16.*pi*a*c)
+

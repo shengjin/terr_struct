@@ -1,0 +1,11 @@
+1.0
+2.0
+0.33
+0.66
+0.01
+
+READ(3,*)Pout
+READ(3,*)mearth
+READ(3,*)frac_core
+READ(3,*)frac_mantle
+READ(3,*)frac_water
