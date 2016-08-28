@@ -27,8 +27,6 @@ INTEGER                                      ::N_frontieres
 DOUBLE PRECISION                             ::Rstart
 
 
-CALL logo
-
 
 !----------------------
 !get initial conditions
